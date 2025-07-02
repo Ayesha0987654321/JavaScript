@@ -32,7 +32,11 @@
 
 // Fizz Buzz Chanllenge
 for(let i =2 ; i <= 100; i++){
-    if(i % 3 == 0){
+    if(i % 3 == 0 && i % 5 == 0){
+        console.log("FizzBuzz");
+        continue;
+    }
+    else if(i % 3 == 0){
         console.log("Fizz");
         continue;
     }
