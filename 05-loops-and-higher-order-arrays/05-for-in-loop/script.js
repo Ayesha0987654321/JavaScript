@@ -10,3 +10,10 @@ const colors = ["red" , "blue", "green" , "white"];
 for(let key in colors){
     console.log(key , colors[key]); // return the index
 }
+
+
+//loop through strings
+let name = "Ayesha";
+for(let i in name){
+    console.log(name[i]);
+}
