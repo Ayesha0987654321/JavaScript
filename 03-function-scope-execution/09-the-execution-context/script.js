@@ -1,7 +1,7 @@
 // the execution context   somethimg happen behind the scene 
 //execute line by line
 //There are two phases when two execution context is created 
-//memory creation phase   donot actually execute the code   create th eglobal object (browser =  object  , Node.js = global )    2 create this object and bind it to the global object  3 set up memory heap for variables and function referrences  4 store the function and variables in global execution context and set to undefined
+//memory creation phase   donot actually execute the code   create the global object (browser =  object  , Node.js = global )    2 create this object and bind it to the global object  3 set up memory heap for variables and function referrences  4 store the function and variables in global execution context and set to undefined
 
 //execution phase  1 execute the code line by line 2 create a new execution context for each function call
 
@@ -20,7 +20,7 @@ let sum2 = getSum(12 , 4);
 // creation phase
 // x variable is allocated memory stores and store undefined
 // y variable is allocated memory and stror undefined
-// getSum function is allocated memoryandstoes undefined 
+// getSum function is allocated memoryandstoes store function defination
 // sum1 variable is allocated memory and stores undfined
 //sum2 variable is aloaed memory and stores undefind
 // //Execution Phase
