@@ -23,3 +23,6 @@ map.set('age',80);
 for(let [key , value] of map){
     console.log(key , value);
 }
+
+
+

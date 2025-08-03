@@ -1,0 +1,16 @@
+*{
+    margin :0 ;
+    padding :0;
+    box-sizing:border-box;
+
+}
+.container{
+    width: 100%;
+    max-width: 1140px;
+    margin : 0 auto;
+    padding:20px 0px;
+    
+}
+.child{
+    padding:8px 0px;
+}

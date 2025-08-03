@@ -1,0 +1,22 @@
+[
+    {
+        "id" : 1,
+        "name" : "Ayesha",
+        "email" : "ayeesh11213@gamil.com"
+    },
+    {
+        "id" : 2,
+        "name" : "Javed",
+        "email" : "javed11213@gamil.com"
+    },
+    {
+        "id" : 3,
+        "name" : "Abubakar",
+        "email" : "abubakar11213@gamil.com"
+    },
+    {
+        "id" : 4,
+        "name" : "Eshmal",
+        "email" : "eshmal11213@gamil.com"
+    }
+]
