@@ -23,14 +23,15 @@
 
    x = s.toLowerCase();
    x = s.charAt(2);
-
+  x = s.startsWith('hello');
+  x= s.endsWith('world');
    x = s.indexOf('H');
    x = s.substring(0,4);
    x = s.substring(7);
    x = s.slice(0,5);
    x = '            Hello world';
    x = x.trim();
-   x = s.replace('WOrld' , 'Ayesha');
+   x = s.replace('WOrld' , 'Ayesha');  //replaceAll
    x = s.includes('Hello');
    x = s.valueOf();
    x = s.split('');

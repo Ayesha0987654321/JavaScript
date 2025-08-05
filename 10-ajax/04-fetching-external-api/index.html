@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04 - Fetching External AP</title>
+    <style>
+        #users{
+            width:100%;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #ececec;
+
+        }
+        .user ul{
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <button id="button">Load github users</button>
+    <br><br>
+    <h1>Github Users</h1>
+    <div id="users"></div>
+
+    <script>
+        document.getElementById("button").addEventListener("click",loadGithubUsers);
+       function loadGithubUsers(){
+         var xhr = new XMLHttpRequest();
+        xhr.open('GET', 'https://api.github.com/users', true);
+         xhr.onload = function(){
+         if(this.status == 200){
+            var users =JSON.parse(this.responseText);
+            // console.log(users);
+
+            var output = '';
+            for(let user of users){
+               output += '<div class="user">'+
+                         '<ul>' +
+                         '<img src="' +user.avatar_url+'" width="400" height="400">'+
+                         '<li>Id :' + user.id + '</li>' +
+                         '<li>login : '+ user.login + '</li>' +
+                        '</ul>'+
+                        '</div>';
+                    };
+                    document.getElementById('users').innerHTML = output;
+        }
+    }
+    xhr.send();
+    }
+    </script>
+</body>
+</html>
